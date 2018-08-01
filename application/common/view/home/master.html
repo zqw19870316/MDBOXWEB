@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>迈迪</title>
+    <meta name="keywords" content="" /> 
+    <meta name="description" content=""/> 
+    <link rel="Shortcut Icon" href="__STATIC__/mdsoft.ico">
+    <link rel="stylesheet" href="__CommonCSS__/indexBase.css">
 </head>
-<link rel="stylesheet" href="__CommonCSS__/indexBase.css">
 <body>
 <!--中间内容-->
 <div id="main">
-    {__CONTENT__}
+    {block name='body'}{/block}
 </div>
 <!--左侧导航-->
 <div id="navleft">
     <ul>
-        <a href="{:url('Index/index')}" target="_blank">
+        <a href="{:url('Index/index')}" {neq name="controller_name" value="Index"}target="_blank"{/neq}>
             <li class="navleft_li {eq name="controller_name" value="Index"}active{/eq}">
                 <img src="__IMG__/design.png" />
             </li>
         </a>
-        <a href="{:url('Organization/index')}" target="_blank">
+        <a href="{:url('Organization/index')}" {neq name="controller_name" value="Organization"}target="_blank"{/neq}>
             <li class="navleft_li {eq name="controller_name" value="Organization"}active{/eq}">
                 <img src="__IMG__/organization.png" />
             </li>

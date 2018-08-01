@@ -135,7 +135,12 @@ return [
 
     // 异常页面的模板文件
     'exception_tmpl'         => Env::get('think_path') . 'tpl/think_exception.tpl',
-
+    'http_exception_template'    =>  [
+        // 定义404错误的模板文件地址
+        404 =>  Env::get('app_path') . 'common/view/404.html',
+        // 还可以定义其它的HTTP status
+        401 =>  Env::get('app_path') . '401.html',
+    ],
     // 错误显示信息,非调试模式有效
     'error_message'          => '页面错误！请稍后再试～',
     // 显示错误信息

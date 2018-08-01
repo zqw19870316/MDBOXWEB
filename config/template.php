@@ -33,6 +33,7 @@ return [
     // 标签库标签结束标记
     'taglib_end'   => '}',
     'tpl_replace_string'  =>  [
+        '__STATIC__' =>'/static',
         '__IndexCSS__'=>'/static/home/css',
         '__IndexJS__'=>'/static/home/js',
         '__CommonCSS__' => '/static/common/css',
