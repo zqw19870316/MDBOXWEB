@@ -1,6 +1,5 @@
 <?php namespace app\common\controller;
 use think\Controller;
-
 /**
  * Created by PhpStorm.
  * User: Administrator
@@ -9,15 +8,4 @@ use think\Controller;
  */
 class Common extends Controller
 {
-  public function __construct()
-    {
-        parent::__construct();
-        $this->getControName();
-
-    }
-    //获取控制器的名字
-    public function getControName(){
-        $controller_name = \think\facade\Request::controller();
-        $this->assign('controller_name',$controller_name);
-    }
 }
