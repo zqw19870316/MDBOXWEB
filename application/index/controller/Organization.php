@@ -19,7 +19,6 @@ class Organization extends Home
      */
     public function index(){
 
-        echo 12312;
         return $this->fetch();
     }
 
