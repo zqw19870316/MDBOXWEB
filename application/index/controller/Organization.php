@@ -18,6 +18,7 @@ class Organization extends Home
      * 组织机构-首页
      */
     public function index(){
+
         return $this->fetch();
     }
 
